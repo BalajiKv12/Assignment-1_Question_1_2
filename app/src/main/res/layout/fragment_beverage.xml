@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BeverageFragment"
+    android:background="@color/WatermelonRed">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/CocoColaCard"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="20dp"
+        android:clickable="true"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/Champagne">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/imgcococola"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="left"
+                android:layout_margin="10dp"
+                android:src="@drawable/cococola" />
+
+            <TextView
+                android:id="@+id/CocoCola"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@id/imgcococola"
+                android:text="@string/coco_cola"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/CocoCola_RS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@id/imgcococola"
+                android:layout_below="@id/CocoCola"
+                android:text="@string/rs"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/CocoCola_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_toEndOf="@id/CocoCola_RS"
+                android:layout_below="@id/CocoCola"
+                android:text="@string/_30"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/CocoCola_sub"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="@string/Subract"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/WatermelonRed"
+                android:layout_toEndOf="@id/imgcococola"
+                android:layout_alignBottom="@id/CocoCola_price"
+                android:layout_marginBottom="-50dp"/>
+
+            <TextView
+                android:id="@+id/CocoCola_quantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/CocoCola_sub"
+                android:layout_alignBottom="@id/CocoCola_price"
+                android:layout_marginBottom="-40dp"
+                android:layout_marginStart="20dp"
+                android:text="0"
+                android:textSize="24sp"
+                />
+            <Button
+                android:id="@+id/CocoCola_add"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="@string/add"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:backgroundTint="@color/WatermelonRed"
+                android:layout_toEndOf="@id/CocoCola_quantity"
+                android:layout_alignBottom="@id/CocoCola_price"
+                android:layout_marginBottom="-50dp"
+                android:layout_marginLeft="20dp"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/MilkshakeCard"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/CocoColaCard"
+        android:layout_marginBottom="-150dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="20dp"
+        android:clickable="true"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/Champagne">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/imgmilkshake"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="left"
+                android:layout_margin="10dp"
+                android:src="@drawable/chocolate_milkshake" />
+
+            <TextView
+                android:id="@+id/ChocolateMilkshake"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@id/imgmilkshake"
+                android:text="@string/choco_shake"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/ChocolateMilkshake_RS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@id/imgmilkshake"
+                android:layout_below="@id/ChocolateMilkshake"
+                android:text="@string/rs"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/ChocolateMilkshake_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_toEndOf="@id/ChocolateMilkshake_RS"
+                android:layout_below="@id/ChocolateMilkshake"
+                android:text="@string/_70"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/Milkshake_sub"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="@string/Subract"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/WatermelonRed"
+                android:layout_toEndOf="@id/imgmilkshake"
+                android:layout_alignBottom="@id/ChocolateMilkshake_price"
+                android:layout_marginBottom="-50dp"/>
+
+            <TextView
+                android:id="@+id/Milkshake_quantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/Milkshake_sub"
+                android:layout_alignBottom="@id/ChocolateMilkshake_price"
+                android:layout_marginBottom="-40dp"
+                android:layout_marginStart="20dp"
+                android:text="0"
+                android:textSize="24sp"
+                />
+            <Button
+                android:id="@+id/Milkshake_add"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="@string/add"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:backgroundTint="@color/WatermelonRed"
+                android:layout_toEndOf="@id/Milkshake_quantity"
+                android:layout_alignBottom="@id/ChocolateMilkshake_price"
+                android:layout_marginBottom="-50dp"
+                android:layout_marginStart="20dp"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/JuiceCard"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/MilkshakeCard"
+        android:layout_marginBottom="-150dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="20dp"
+        android:clickable="true"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/Champagne">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/imgjuice"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="left"
+                android:layout_margin="10dp"
+                android:src="@drawable/apple_juice" />
+
+            <TextView
+                android:id="@+id/AppleJuice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/imgjuice"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:text="@string/apple_juise"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/AppleJuice_RS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@id/imgjuice"
+                android:layout_below="@id/AppleJuice"
+                android:text="@string/rs"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/AppleJuice_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_toEndOf="@id/AppleJuice_RS"
+                android:layout_below="@id/AppleJuice"
+                android:text="@string/_40"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/Juice_sub"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="@string/Subract"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/WatermelonRed"
+                android:layout_toEndOf="@id/imgjuice"
+                android:layout_alignBottom="@id/AppleJuice_price"
+                android:layout_marginBottom="-50dp"/>
+
+            <TextView
+                android:id="@+id/Juice_quantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/Juice_sub"
+                android:layout_alignBottom="@id/AppleJuice_price"
+                android:layout_marginBottom="-40dp"
+                android:layout_marginStart="20dp"
+                android:text="0"
+                android:textSize="24sp"
+                />
+            <Button
+                android:id="@+id/Juice_add"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="@string/add"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:backgroundTint="@color/WatermelonRed"
+                android:layout_toEndOf="@id/Juice_quantity"
+                android:layout_alignBottom="@id/AppleJuice_price"
+                android:layout_marginBottom="-50dp"
+                android:layout_marginStart="20dp"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/beverageSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/save"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/Champagne"
+        android:layout_below="@id/JuiceCard"
+        android:layout_marginTop="200dp"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>

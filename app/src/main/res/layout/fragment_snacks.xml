@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SnacksFragment"
+    android:background="@color/WatermelonRed">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/PuffsCard"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="20dp"
+        android:clickable="true"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/Champagne">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/imgpuffs"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="left"
+                android:layout_margin="10dp"
+                android:src="@drawable/eggpuffs" />
+
+            <TextView
+                android:id="@+id/eggPuffs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@id/imgpuffs"
+                android:text="@string/egg_puffs"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/Puffs_RS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@id/imgpuffs"
+                android:layout_below="@id/eggPuffs"
+                android:text="@string/rs"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/Puffs_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_toEndOf="@id/Puffs_RS"
+                android:layout_below="@id/eggPuffs"
+                android:text="@string/_30"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/puffs_sub"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="@string/Subract"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/WatermelonRed"
+                android:layout_toEndOf="@id/imgpuffs"
+                android:layout_alignBottom="@id/Puffs_price"
+                android:layout_marginBottom="-50dp"/>
+
+            <TextView
+                android:id="@+id/Puffs_quantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/puffs_sub"
+                android:layout_alignBottom="@id/Puffs_price"
+                android:layout_marginBottom="-40dp"
+                android:layout_marginStart="20dp"
+                android:text="0"
+                android:textSize="24sp"
+                />
+            <Button
+                android:id="@+id/Puffs_add"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="@string/add"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:backgroundTint="@color/WatermelonRed"
+                android:layout_toEndOf="@id/Puffs_quantity"
+                android:layout_alignBottom="@id/Puffs_price"
+                android:layout_marginBottom="-50dp"
+                android:layout_marginStart="20dp"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/ChipsCard"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/PuffsCard"
+        android:layout_marginBottom="-150dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="20dp"
+        android:clickable="true"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/Champagne">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/imgchips"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="left"
+                android:layout_margin="10dp"
+                android:src="@drawable/potatochips" />
+
+            <TextView
+                android:id="@+id/PotatoChips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@id/imgchips"
+                android:text="@string/potato_chips"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/Chips_RS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@id/imgchips"
+                android:layout_below="@id/PotatoChips"
+                android:text="@string/rs"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/Chips_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_toEndOf="@id/Chips_RS"
+                android:layout_below="@id/PotatoChips"
+                android:text="@string/_20"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/Chips_sub"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="@string/Subract"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/WatermelonRed"
+                android:layout_toEndOf="@id/imgchips"
+                android:layout_alignBottom="@id/Chips_price"
+                android:layout_marginBottom="-50dp"/>
+
+            <TextView
+                android:id="@+id/Chips_quantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/Chips_sub"
+                android:layout_alignBottom="@id/Chips_price"
+                android:layout_marginBottom="-40dp"
+                android:layout_marginStart="20dp"
+                android:text="0"
+                android:textSize="24sp"
+                />
+            <Button
+                android:id="@+id/Chips_add"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="@string/add"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:backgroundTint="@color/WatermelonRed"
+                android:layout_toEndOf="@id/Chips_quantity"
+                android:layout_alignBottom="@id/Chips_price"
+                android:layout_marginBottom="-50dp"
+                android:layout_marginStart="20dp"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/SandwichCard"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/ChipsCard"
+        android:layout_marginBottom="-150dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="20dp"
+        android:clickable="true"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/Champagne">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/imgsandwich"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="left"
+                android:layout_margin="10dp"
+                android:src="@drawable/sandwich" />
+
+            <TextView
+                android:id="@+id/Sandwich"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/imgsandwich"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:text="@string/veg_sandwich"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/Sandwich_RS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@id/imgsandwich"
+                android:layout_below="@id/Sandwich"
+                android:text="@string/rs"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/Sandwich_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_toEndOf="@id/Sandwich_RS"
+                android:layout_below="@id/Sandwich"
+                android:text="@string/_60"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/Sandwich_sub"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="@string/Subract"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/WatermelonRed"
+                android:layout_toEndOf="@id/imgsandwich"
+                android:layout_alignBottom="@id/Sandwich_price"
+                android:layout_marginBottom="-50dp"/>
+
+            <TextView
+                android:id="@+id/Sandwich_quantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/Sandwich_sub"
+                android:layout_alignBottom="@id/Sandwich_price"
+                android:layout_marginBottom="-40dp"
+                android:layout_marginStart="20dp"
+                android:text="0"
+                android:textSize="24sp"
+                />
+            <Button
+                android:id="@+id/Sandwich_add"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="@string/add"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:backgroundTint="@color/WatermelonRed"
+                android:layout_toEndOf="@id/Sandwich_quantity"
+                android:layout_alignBottom="@id/Sandwich_price"
+                android:layout_marginBottom="-50dp"
+                android:layout_marginStart="20dp"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/snacksSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/save"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/Champagne"
+        android:layout_below="@id/SandwichCard"
+        android:layout_marginTop="200dp"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>

@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PastryFragment"
+    android:background="@color/WatermelonRed">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/ChocoCakeCard"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="20dp"
+        android:clickable="true"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/Champagne">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/imgchocolate"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="left"
+                android:layout_margin="10dp"
+                android:src="@drawable/chocolate_cake" />
+
+            <TextView
+                android:id="@+id/ChocolateCake"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@id/imgchocolate"
+                android:text="@string/chocolate_cake"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/Chococake_RS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@id/imgchocolate"
+                android:layout_below="@id/ChocolateCake"
+                android:text="@string/rs"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/Chococake_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_toEndOf="@id/Chococake_RS"
+                android:layout_below="@id/ChocolateCake"
+                android:text="@string/_40"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/Chococake_sub"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="@string/Subract"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/WatermelonRed"
+                android:layout_toEndOf="@id/imgchocolate"
+                android:layout_alignBottom="@id/Chococake_price"
+                android:layout_marginBottom="-50dp"/>
+
+            <TextView
+                android:id="@+id/Chococake_quantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/Chococake_sub"
+                android:layout_alignBottom="@id/Chococake_price"
+                android:layout_marginBottom="-40dp"
+                android:layout_marginStart="20dp"
+                android:text="0"
+                android:textSize="24sp"
+                />
+            <Button
+                android:id="@+id/Chococake_add"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="@string/add"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:backgroundTint="@color/WatermelonRed"
+                android:layout_toEndOf="@id/Chococake_quantity"
+                android:layout_alignBottom="@id/Chococake_price"
+                android:layout_marginBottom="-50dp"
+                android:layout_marginLeft="20dp"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/VannillaCard"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/ChocoCakeCard"
+        android:layout_marginBottom="-150dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="20dp"
+        android:clickable="true"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/Champagne">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/imgvanilla"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="left"
+                android:layout_margin="10dp"
+                android:src="@drawable/vanilla_cake" />
+
+            <TextView
+                android:id="@+id/VanillaCake"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@id/imgvanilla"
+                android:text="@string/vanilla_cake"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/vanilla_RS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@id/imgvanilla"
+                android:layout_below="@id/VanillaCake"
+                android:text="@string/rs"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/vanilla_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_toEndOf="@id/vanilla_RS"
+                android:layout_below="@id/VanillaCake"
+                android:text="@string/_30"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/vanilla_sub"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="@string/Subract"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/WatermelonRed"
+                android:layout_toEndOf="@id/imgvanilla"
+                android:layout_alignBottom="@id/vanilla_price"
+                android:layout_marginBottom="-50dp"/>
+
+            <TextView
+                android:id="@+id/vanilla_quantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/vanilla_sub"
+                android:layout_alignBottom="@id/vanilla_price"
+                android:layout_marginBottom="-40dp"
+                android:layout_marginStart="20dp"
+                android:text="0"
+                android:textSize="24sp"
+                />
+            <Button
+                android:id="@+id/vanilla_add"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="@string/add"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:backgroundTint="@color/WatermelonRed"
+                android:layout_toEndOf="@id/vanilla_quantity"
+                android:layout_alignBottom="@id/vanilla_price"
+                android:layout_marginBottom="-50dp"
+                android:layout_marginStart="20dp"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/SandwichCard"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/VannillaCard"
+        android:layout_marginBottom="-150dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="20dp"
+        android:clickable="true"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/Champagne">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/imgblackforest"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="left"
+                android:layout_margin="10dp"
+                android:src="@drawable/black_forest" />
+
+            <TextView
+                android:id="@+id/blackforest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/imgblackforest"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:text="@string/black_forest"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/blackforest_RS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@id/imgblackforest"
+                android:layout_below="@id/blackforest"
+                android:text="@string/rs"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/blackforest_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_toEndOf="@id/blackforest_RS"
+                android:layout_below="@id/blackforest"
+                android:text="@string/_70"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/blackforest_sub"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="@string/Subract"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/WatermelonRed"
+                android:layout_toEndOf="@id/imgblackforest"
+                android:layout_alignBottom="@id/blackforest_price"
+                android:layout_marginBottom="-50dp"/>
+
+            <TextView
+                android:id="@+id/blackforest_quantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/blackforest_sub"
+                android:layout_alignBottom="@id/blackforest_price"
+                android:layout_marginBottom="-40dp"
+                android:layout_marginStart="20dp"
+                android:text="0"
+                android:textSize="24sp"
+                />
+            <Button
+                android:id="@+id/blackforest_add"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="@string/add"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:backgroundTint="@color/WatermelonRed"
+                android:layout_toEndOf="@id/blackforest_quantity"
+                android:layout_alignBottom="@id/blackforest_price"
+                android:layout_marginBottom="-50dp"
+                android:layout_marginStart="20dp"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/pastrySave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/save"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/Champagne"
+        android:layout_below="@id/SandwichCard"
+        android:layout_marginTop="200dp"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>

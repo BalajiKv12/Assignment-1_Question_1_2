@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Login_Assignment_Q1</string>
+    <string name="Subract">-</string>
+    <string name="coco_cola">Coco Cola</string>
+    <string name="rs">Rs.</string>
+    <string name="_30">30</string>
+    <string name="add">+</string>
+    <string name="choco_shake">Choco shake</string>
+    <string name="_70">70</string>
+    <string name="apple_juise">Apple Juise</string>
+    <string name="_40">40</string>
+    <string name="egg_puffs">Egg Puffs</string>
+    <string name="potato_chips">Potato Chips</string>
+    <string name="veg_sandwich">Veg Sandwich</string>
+    <string name="save">save</string>
+    <string name="_20">20</string>
+    <string name="_60">60</string>
+    <string name="chocolate_cake">Chocolate Cake</string>
+    <string name="vanilla_cake">Vanilla Cake</string>
+    <string name="black_forest">Black Forest</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
